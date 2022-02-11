@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 130px;
+}
+
+.grid {
+  font-family: sans-serif;
+}
+
+li {
+  font-size: 35px;
+}
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-style: solid;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 20px;
+}
+
+footer {
+  font-size: 18px;
+}
+
+.grid2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html {
+  display: -ms-grid;
+  display: grid;
+  background-image: radial-gradient(blue, blueviolet);
+}
+
+header {
+  text-align: center;
+  background-color: grey;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+}
+
+li {
+  background-color: salmon;
+}
+
+li:hover {
+  background-color: aqua;
+}
+
+p {
+  background-color: cadetblue;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  text-decoration: line-through;
+  background-color: grey;
+}
+
+footer:hover {
+  background-color: chocolate;
+}
+
+/*comentario css*/
+/*# sourceMappingURL=origen.css.map */

@@ -1,0 +1,47 @@
+//comentario scss
+*{
+    margin: 0;
+    padding: 0;
+}
+@import "tipografia";
+@import "modificaciones";
+//Variables
+$otro:grey;
+
+html{
+    display:grid;
+    background-image: radial-gradient(blue, blueviolet);
+}
+header{
+    text-align: center;
+    background-color:$otro;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  
+}
+li{
+    background-color: salmon;
+    &:hover{
+        background-color: aqua;
+    }
+}
+p{
+    background-color: cadetblue;
+}
+footer{
+    color:black;
+    text-align: center;
+    text-decoration: line-through;
+    background-color: $otro;
+    &:hover{
+        background-color: chocolate;
+    }
+        
+    
+}
+
+/*comentario css*/

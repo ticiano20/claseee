@@ -1,0 +1,9 @@
+.grid2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+/*# sourceMappingURL=imagen.css.map */
