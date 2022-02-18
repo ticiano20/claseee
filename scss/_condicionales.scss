@@ -1,0 +1,13 @@
+@import "variables";
+
+
+
+body{
+@if $vista == $ancho {
+	@media only screen and (min-width:1024px){
+		h1{font-size:$h1Desktop;}
+		h3{font-size:35px;}
+		p{font-size:$parrafoDesktop;}
+		}
+}
+}

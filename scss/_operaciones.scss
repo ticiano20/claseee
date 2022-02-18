@@ -1,0 +1,11 @@
+@import "variables";
+
+.grid{
+    width: $ancho * 2;
+    .inicio{
+        background-color: $amarillo;
+        &:hover{
+            background-color: aqua;
+        }
+    }
+}

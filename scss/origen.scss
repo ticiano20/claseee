@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
 }
+@import "_operaciones";
 @import "tipografia";
 @import "modificaciones";
-//Variables
-$otro:grey;
+@import "variables";
+@import "condicionales";
 
 html{
     display:grid;
@@ -14,7 +15,7 @@ html{
 }
 header{
     text-align: center;
-    background-color:$otro;
+    background-color:$color;
 }
 
 .grid {
@@ -23,20 +24,47 @@ header{
   grid-template-rows: auto auto auto auto;
   
 }
-li{
+ul{
     background-color: salmon;
     &:hover{
         background-color: aqua;
     }
 }
 p{
-    background-color: cadetblue;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
 }
+@mixin cosa () {
+    color: hotpink;
+    background-color: #455;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+.p{
+    font-size: map-get($map, $key: p );
+}
+.p1{
+        @include cosa()
+    }
+.p2{
+        background-color: aqua;
+    }
+.p3{
+        @include cosa()
+    }
+.p4{
+    font-size: map-get($map, $key: p4 );
+}
+
+
 footer{
     color:black;
     text-align: center;
     text-decoration: line-through;
-    background-color: $otro;
+    background-color: $color;
     &:hover{
         background-color: chocolate;
     }
@@ -45,3 +73,4 @@ footer{
 }
 
 /*comentario css*/
+/*compila?*/
